@@ -1,0 +1,268 @@
+#!/bin/sh
+## curl -L "https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=kevinrose&count=3000" > kevinrose.json
+## curl -L "https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=davemorin&count=3000" > davemorin.json
+## curl -L "https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=howardlindzon&count=3000" > howardlindzon.json
+## curl -L "https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=pkedrosky&count=3000" > pkedrosky.json
+## curl -L "https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=davemcclure&count=3000" > davemcclure.json
+## curl -L "https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=mkapor&count=3000" > mkapor.json
+## curl -L "https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=quixotic&count=3000" > quixotic.json
+## curl -L "https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=Joi&count=3000" > Joi.json
+## curl -L "https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=veroach&count=3000" > veroach.json
+## curl -L "https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=auren&count=3000" > auren.json
+## curl -L "https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=edyson&count=3000" > edyson.json
+## curl -L "https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=shervin&count=3000" > shervin.json
+## curl -L "https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=mlevchin&count=3000" > mlevchin.json
+## curl -L "https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=naval&count=3000" > naval.json
+## curl -L "https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=arjunsethi&count=3000" > arjunsethi.json
+## curl -L "https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=rabois&count=3000" > rabois.json
+## curl -L "https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=cyantist&count=3000" > cyantist.json
+## curl -L "https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=joshu&count=3000" > joshu.json
+## curl -L "https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=amuse&count=3000" > amuse.json
+## curl -L "https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=infoarbitrage&count=3000" > infoarbitrage.json
+## curl -L "https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=seth&count=3000" > seth.json
+## curl -L "https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=MParekh&count=3000" > MParekh.json
+## curl -L "https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=novaspivack&count=3000" > novaspivack.json
+## curl -L "https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=BrianNorgard&count=3000" > BrianNorgard.json
+## curl -L "https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=davetisch&count=3000" > davetisch.json
+## curl -L "https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=westcoastbill&count=3000" > westcoastbill.json
+## curl -L "https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=DavidSacks&count=3000" > DavidSacks.json
+## curl -L "https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=jberrebi&count=3000" > jberrebi.json
+## curl -L "https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=m2jr&count=3000" > m2jr.json
+## curl -L "https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=john_frankel&count=3000" > john_frankel.json
+## curl -L "https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=saarsaar&count=3000" > saarsaar.json
+## curl -L "https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=daslee&count=3000" > daslee.json
+## curl -L "https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=davepell&count=3000" > davepell.json
+## curl -L "https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=kfury&count=3000" > kfury.json
+## curl -L "https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=yegg&count=3000" > yegg.json
+## curl -L "https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=jhong&count=3000" > jhong.json
+## curl -L "https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=paigecraig&count=3000" > paigecraig.json
+## curl -L "https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=epaley&count=3000" > epaley.json
+## curl -L "https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=annimaniac&count=3000" > annimaniac.json
+## curl -L "https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=chrisyeh&count=3000" > chrisyeh.json
+## curl -L "https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=phineasb&count=3000" > phineasb.json
+## curl -L "https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=hkanji&count=3000" > hkanji.json
+## curl -L "https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=sampullara&count=3000" > sampullara.json
+## curl -L "https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=simeons&count=3000" > simeons.json
+## curl -L "https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=thomask&count=3000" > thomask.json
+## curl -L "https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=davidsrose&count=3000" > davidsrose.json
+## curl -L "https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=eileentso&count=3000" > eileentso.json
+## curl -L "https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=davidblerner&count=3000" > davidblerner.json
+## curl -L "https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=nihalmehta&count=3000" > nihalmehta.json
+## curl -L "https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=jdh&count=3000" > jdh.json
+## curl -L "https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=dshen&count=3000" > dshen.json
+## curl -L "https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=bwertz&count=3000" > bwertz.json
+## curl -L "https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=bragiel&count=3000" > bragiel.json
+## curl -L "https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=edsim&count=3000" > edsim.json
+## curl -L "https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=kurnit&count=3000" > kurnit.json
+## curl -L "https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=jstylman&count=3000" > jstylman.json
+## curl -L "https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=chrija&count=3000" > chrija.json
+## curl -L "https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=royrod&count=3000" > royrod.json
+## curl -L "https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=danielheaf&count=3000" > danielheaf.json
+## curl -L "https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=dannyrobinson&count=3000" > dannyrobinson.json
+## curl -L "https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=crashdev&count=3000" > crashdev.json
+## curl -L "https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=asmith&count=3000" > asmith.json
+## curl -L "https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=randyhaykin&count=3000" > randyhaykin.json
+## curl -L "https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=kristianindy&count=3000" > kristianindy.json
+## curl -L "https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=hershberg&count=3000" > hershberg.json
+## curl -L "https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=johngreathouse&count=3000" > johngreathouse.json
+## curl -L "https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=r0bl0rd&count=3000" > r0bl0rd.json
+## curl -L "https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=andreazurek&count=3000" > andreazurek.json
+## curl -L "https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=tgmtgm&count=3000" > tgmtgm.json
+## curl -L "https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=curiousoffice&count=3000" > curiousoffice.json
+## curl -L "https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=rfradin&count=3000" > rfradin.json
+## curl -L "https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=stephendeberry&count=3000" > stephendeberry.json
+## curl -L "https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=ganeumann&count=3000" > ganeumann.json
+## curl -L "https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=gharik&count=3000" > gharik.json
+## curl -L "https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=gRamblings&count=3000" > gRamblings.json
+## curl -L "https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=billboebel&count=3000" > billboebel.json
+## curl -L "https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=fbishara&count=3000" > fbishara.json
+## curl -L "https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=mattcoffin&count=3000" > mattcoffin.json
+## curl -L "https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=rchen&count=3000" > rchen.json
+## curl -L "https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=jaichoi&count=3000" > jaichoi.json
+## curl -L "https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=pejmannozad&count=3000" > pejmannozad.json
+## curl -L "https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=moneyball&count=3000" > moneyball.json
+## curl -L "https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=TexasSuperAngel&count=3000" > TexasSuperAngel.json
+## curl -L "https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=Seanglass&count=3000" > Seanglass.json
+## curl -L "https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=hajak&count=3000" > hajak.json
+## curl -L "https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=kipmcc&count=3000" > kipmcc.json
+## curl -L "https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=petelehrman&count=3000" > petelehrman.json
+## curl -L "https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=LFlanagan&count=3000" > LFlanagan.json
+## curl -L "https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=dnak&count=3000" > dnak.json
+## curl -L "https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=rameshharidas&count=3000" > rameshharidas.json
+## curl -L "https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=alex01&count=3000" > alex01.json
+## curl -L "https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=joelyarmon&count=3000" > joelyarmon.json
+## curl -L "https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=willherman&count=3000" > willherman.json
+## curl -L "https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=stephengill&count=3000" > stephengill.json
+## curl -L "https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=tonsing&count=3000" > tonsing.json
+## curl -L "https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=Cfederman&count=3000" > Cfederman.json
+## curl -L "https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=clandry&count=3000" > clandry.json
+## curl -L "https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=frederikfleck&count=3000" > frederikfleck.json
+## curl -L "https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=tdklein&count=3000" > tdklein.json
+curl -L "https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=jstoffer&count=3000" > jstoffer.json
+curl -L "https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=akash_agarwal&count=3000" > akash_agarwal.json
+curl -L "https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=gpjudge&count=3000" > gpjudge.json
+curl -L "https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=esalisbury&count=3000" > esalisbury.json
+curl -L "https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=simonmurdoch&count=3000" > simonmurdoch.json
+curl -L "https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=e_hahn&count=3000" > e_hahn.json
+curl -L "https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=KonaTbone&count=3000" > KonaTbone.json
+curl -L "https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=davenak&count=3000" > davenak.json
+curl -L "https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=jmillerinc&count=3000" > jmillerinc.json
+curl -L "https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=fdestin&count=3000" > fdestin.json
+curl -L "https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=maxniederhofer&count=3000" > maxniederhofer.json
+curl -L "https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=dolginow&count=3000" > dolginow.json
+curl -L "https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=davidhornik&count=3000" > davidhornik.json
+curl -L "https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=ptlee&count=3000" > ptlee.json
+curl -L "https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=satyap&count=3000" > satyap.json
+curl -L "https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=dauber&count=3000" > dauber.json
+curl -L "https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=andrewdlee&count=3000" > andrewdlee.json
+curl -L "https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=mdauber&count=3000" > mdauber.json
+curl -L "https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=m_ingle&count=3000" > m_ingle.json
+curl -L "https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=bgurley&count=3000" > bgurley.json
+curl -L "https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=peterfenton&count=3000" > peterfenton.json
+curl -L "https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=mattcohler&count=3000" > mattcohler.json
+curl -L "https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=mikeeisenberg&count=3000" > mikeeisenberg.json
+curl -L "https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=MitchLasky&count=3000" > MitchLasky.json
+curl -L "https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=kegs&count=3000" > kegs.json
+curl -L "https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=aweissman&count=3000" > aweissman.json
+curl -L "https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=JohnBorthwick&count=3000" > JohnBorthwick.json
+curl -L "https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=davidcowan&count=3000" > davidcowan.json
+curl -L "https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=sarahtavel&count=3000" > sarahtavel.json
+curl -L "https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=ethankurz&count=3000" > ethankurz.json
+curl -L "https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=jeremyl&count=3000" > jeremyl.json
+curl -L "https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=jamescham&count=3000" > jamescham.json
+curl -L "https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=AmbarBh&count=3000" > AmbarBh.json
+curl -L "https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=mattsalz&count=3000" > mattsalz.json
+curl -L "https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=eth0s&count=3000" > eth0s.json
+curl -L "https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=adventurista&count=3000" > adventurista.json
+curl -L "https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=dsternsf&count=3000" > dsternsf.json
+curl -L "https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=kansteven&count=3000" > kansteven.json
+curl -L "https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=georgezachary&count=3000" > georgezachary.json
+curl -L "https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=TimDraper&count=3000" > TimDraper.json
+curl -L "https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=dfjjosh&count=3000" > dfjjosh.json
+curl -L "https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=rohrsh&count=3000" > rohrsh.json
+curl -L "https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=Beezer232&count=3000" > Beezer232.json
+curl -L "https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=brisbourne&count=3000" > brisbourne.json
+curl -L "https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=mpd&count=3000" > mpd.json
+curl -L "https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=markpeterdavis&count=3000" > markpeterdavis.json
+curl -L "https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=marojejian&count=3000" > marojejian.json
+curl -L "https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=ceduardo&count=3000" > ceduardo.json
+curl -L "https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=sitar&count=3000" > sitar.json
+curl -L "https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=toetoe&count=3000" > toetoe.json
+curl -L "https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=kevinspain&count=3000" > kevinspain.json
+curl -L "https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=brian_emcap&count=3000" > brian_emcap.json
+curl -L "https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=mikequity&count=3000" > mikequity.json
+curl -L "https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=joshk&count=3000" > joshk.json
+curl -L "https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=ceonyc&count=3000" > ceonyc.json
+curl -L "https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=christine&count=3000" > christine.json
+curl -L "https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=robhayes&count=3000" > robhayes.json
+curl -L "https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=HLMorgan&count=3000" > HLMorgan.json
+curl -L "https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=kentgoldman&count=3000" > kentgoldman.json
+curl -L "https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=chrisfralic&count=3000" > chrisfralic.json
+curl -L "https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=bussgang&count=3000" > bussgang.json
+curl -L "https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=witheiler&count=3000" > witheiler.json
+curl -L "https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=chazard&count=3000" > chazard.json
+curl -L "https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=bfeld&count=3000" > bfeld.json
+curl -L "https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=jasonmendelson&count=3000" > jasonmendelson.json
+curl -L "https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=sether&count=3000" > sether.json
+curl -L "https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=Ryan_mcintyre&count=3000" > Ryan_mcintyre.json
+curl -L "https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=msuster&count=3000" > msuster.json
+curl -L "https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=glemak&count=3000" > glemak.json
+curl -L "https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=swolfgang&count=3000" > swolfgang.json
+curl -L "https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=gtmit&count=3000" > gtmit.json
+curl -L "https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=highlandcapital&count=3000" > highlandcapital.json
+curl -L "https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=jpalfrey&count=3000" > jpalfrey.json
+curl -L "https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=ataussig&count=3000" > ataussig.json
+curl -L "https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=michaelgaiss&count=3000" > michaelgaiss.json
+curl -L "https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=venturedan&count=3000" > venturedan.json
+curl -L "https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=bijans&count=3000" > bijans.json
+curl -L "https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=vcrecruiter&count=3000" > vcrecruiter.json
+curl -L "https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=mnichols47&count=3000" > mnichols47.json
+curl -L "https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=firstjames&count=3000" > firstjames.json
+curl -L "https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=jhludwig&count=3000" > jhludwig.json
+curl -L "https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=ellegold&count=3000" > ellegold.json
+curl -L "https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=cape&count=3000" > cape.json
+curl -L "https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=indexben&count=3000" > indexben.json
+curl -L "https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=danrua&count=3000" > danrua.json
+curl -L "https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=Baris&count=3000" > Baris.json
+curl -L "https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=sitavasan&count=3000" > sitavasan.json
+curl -L "https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=dougpepper&count=3000" > dougpepper.json
+curl -L "https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=brucevc&count=3000" > brucevc.json
+curl -L "https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=julesmaltz&count=3000" > julesmaltz.json
+curl -L "https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=Elizabeth&count=3000" > Elizabeth.json
+curl -L "https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=toddchaffee&count=3000" > toddchaffee.json
+curl -L "https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=GinaBauman&count=3000" > GinaBauman.json
+curl -L "https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=sharrick&count=3000" > sharrick.json
+curl -L "https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=shiyankoh&count=3000" > shiyankoh.json
+curl -L "https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=nfogelsong&count=3000" > nfogelsong.json
+curl -L "https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=johndoerr&count=3000" > johndoerr.json
+curl -L "https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=bingfish&count=3000" > bingfish.json
+curl -L "https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=chchien&count=3000" > chchien.json
+curl -L "https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=jeremysliew&count=3000" > jeremysliew.json
+## curl -L "https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=bipulsinha&count=3000" > bipulsinha.json
+## curl -L "https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=ashvinb&count=3000" > ashvinb.json
+## curl -L "https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=rewolpert&count=3000" > rewolpert.json
+## curl -L "https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=BostonVC&count=3000" > BostonVC.json
+## curl -L "https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=antrod&count=3000" > antrod.json
+## curl -L "https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=lisbonne&count=3000" > lisbonne.json
+## curl -L "https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=joshhannah&count=3000" > joshhannah.json
+## curl -L "https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=Rajil&count=3000" > Rajil.json
+## curl -L "https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=dpilling&count=3000" > dpilling.json
+## curl -L "https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=stephaniesmccoy&count=3000" > stephaniesmccoy.json
+## curl -L "https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=lewisgersh&count=3000" > lewisgersh.json
+## curl -L "https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=eusef&count=3000" > eusef.json
+## curl -L "https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=MMichel01&count=3000" > MMichel01.json
+## curl -L "https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=rowe&count=3000" > rowe.json
+## curl -L "https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=jcbackus&count=3000" > jcbackus.json
+## curl -L "https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=tdelistathis&count=3000" > tdelistathis.json
+## curl -L "https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=smarcus&count=3000" > smarcus.json
+## curl -L "https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=SMJ_twits&count=3000" > SMJ_twits.json
+## curl -L "https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=ataetle&count=3000" > ataetle.json
+## curl -L "https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=bryce&count=3000" > bryce.json
+## curl -L "https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=TonyMak&count=3000" > TonyMak.json
+## curl -L "https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=leehower&count=3000" > leehower.json
+## curl -L "https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=VCMike&count=3000" > VCMike.json
+## curl -L "https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=ryanspoon&count=3000" > ryanspoon.json
+## curl -L "https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=pflint&count=3000" > pflint.json
+## curl -L "https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=davebarrett4&count=3000" > davebarrett4.json
+## curl -L "https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=dbodbo&count=3000" > dbodbo.json
+## curl -L "https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=DavidUnsworth&count=3000" > DavidUnsworth.json
+## curl -L "https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=jdrive&count=3000" > jdrive.json
+## curl -L "https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=ewiesen&count=3000" > ewiesen.json
+## curl -L "https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=bikenyc&count=3000" > bikenyc.json
+## curl -L "https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=Harsh1&count=3000" > Harsh1.json
+## curl -L "https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=richardyen&count=3000" > richardyen.json
+## curl -L "https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=joevc&count=3000" > joevc.json
+## curl -L "https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=jeff&count=3000" > jeff.json
+## curl -L "https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=jcaplain&count=3000" > jcaplain.json
+## curl -L "https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=bijan&count=3000" > bijan.json
+## curl -L "https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=robgo&count=3000" > robgo.json
+## curl -L "https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=mokoyfman&count=3000" > mokoyfman.json
+## curl -L "https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=todddowl&count=3000" > todddowl.json
+## curl -L "https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=santopoliti&count=3000" > santopoliti.json
+## curl -L "https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=dennismiller&count=3000" > dennismiller.json
+## curl -L "https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=finkelstein1&count=3000" > finkelstein1.json
+## curl -L "https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=jacquimurphy&count=3000" > jacquimurphy.json
+## curl -L "https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=timothyjackson&count=3000" > timothyjackson.json
+## curl -L "https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=pfrisella&count=3000" > pfrisella.json
+## curl -L "https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=andrew_abou&count=3000" > andrew_abou.json
+## curl -L "https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=davidcohen&count=3000" > davidcohen.json
+## curl -L "https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=sbroderick&count=3000" > sbroderick.json
+## curl -L "https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=tkeller&count=3000" > tkeller.json
+## curl -L "https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=om&count=3000" > om.json
+## curl -L "https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=tonysphere&count=3000" > tonysphere.json
+## curl -L "https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=MrVelvet&count=3000" > MrVelvet.json
+## curl -L "https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=tonidotorg&count=3000" > tonidotorg.json
+## curl -L "https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=andemca&count=3000" > andemca.json
+## curl -L "https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=fredwilson&count=3000" > fredwilson.json
+## curl -L "https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=albertwenger&count=3000" > albertwenger.json
+## curl -L "https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=EricFriedman&count=3000" > EricFriedman.json
+## curl -L "https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=andrewparker&count=3000" > andrewparker.json
+## curl -L "https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=cecacioppo&count=3000" > cecacioppo.json
+## curl -L "https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=skrausz1&count=3000" > skrausz1.json
+## curl -L "https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=Maidenberg&count=3000" > Maidenberg.json
+## curl -L "https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=pakman&count=3000" > pakman.json
+## curl -L "https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=dkhare&count=3000" > dkhare.json
+## curl -L "https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=surferdad&count=3000" > surferdad.json
+## curl -L "https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=Mostgold&count=3000" > Mostgold.json
+## curl -L "https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=larryvc&count=3000" > larryvc.json
+## curl -L "https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=frenchie_vc&count=3000" > frenchie_vc.json

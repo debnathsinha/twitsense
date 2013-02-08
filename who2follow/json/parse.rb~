@@ -1,0 +1,17 @@
+#!/usr/bin/ruby
+
+require 'rubygems'
+require 'json'
+require 'pp'
+
+str = File.read(ARGV[0])
+
+data = JSON.parse(str)
+
+pp data[2]["text"]
+
+def tweets(data)
+	data.each { |tweet| puts "#{tweet}[\"text\"]" }
+end
+
+tweets(data)
